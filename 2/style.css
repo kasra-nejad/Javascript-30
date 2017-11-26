@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.clock {
+  width: 50vw;
+  height: 50vw;
+  background-color: black;
+  border-radius: 50%;
+  border: 1rem solid #e6005c;
+  position: relative;
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  background: #e6005c;
+  top: 49.5%;
+  transform-origin: 100%;
+  transform:rotate(90deg);
+  transition: all 0.5s;
+}
+
+.seconds {
+  background: #5800ffe8;
+}
+
+.minutes {
+  background: white
+}
+
+.hours {
+  z-index: 1;
+  width: 35%;
+  left: 7vw;
+}
