@@ -1,0 +1,30 @@
+:root {
+  --blur: 5px;
+  --space: 10px;
+  --base-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  background: black;
+  color: #e6005c;
+  font-size: 40px;
+  font-family: 'Snell Roundhand', cursive;
+}
+
+img {
+  margin-top: 30px;
+  background: var(--base-color);
+  padding: var(--space);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base-color);
+}
