@@ -3,7 +3,6 @@ window.onload = () => {
 
   function updateValue() {
     const suffix = this.dataset.sizing || '';
-    //console.log(this.value);
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
   }
 
