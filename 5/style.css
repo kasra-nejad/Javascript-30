@@ -1,88 +1,90 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster');
-
-*, *:before,*:after{
+*, *:before, *:after {
   box-sizing: inherit;
-  }
+}
 
-  body{
-    padding:0;
-    margin: 0;
-  }
+body {
+  padding: 0;
+  margin: 0;
+}
 
-.panels{
+.panels {
   min-height: 100vh;
   overflow: hidden;
   display: flex;
 }
 
-.panel{
+.panel {
   color: maroon;
   text-align: center;
   align-items: center;
   justify-content: center;
-font-size: 30px;
-font-family: 'Abril Fatface', cursive;
-text-shadow: 1px 0px 2px orange;
-background-size: cover;
-background-position: center;
-flex:1;
-display: flex;
-flex-direction: column;
-transition: all 1s;
+  font-size: 30px;
+  font-family: 'Abril Fatface', cursive;
+  text-shadow: 1px 0px 2px orange;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
 }
 
-.panel > * {
+.panel>* {
   margin: 0;
-  width:100%;
+  width: 100%;
   transition: all 0.5s;
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .open {
   flex: 2.5;
-  }
-
-.panel >*:nth-child(2) {
-font-family: 'Lobster', 'cursive';
-   }
-
-.panel.active >*:nth-child(2) {
-  font-size: 50px;
 }
 
-.panel > *:first-child {
+.panel>*:nth-child(2) {
+  font-family: 'Lobster', 'cursive';
+}
+
+.panel.active>*:nth-child(2) {
+  font-size: 10px;
+  color: white;
+}
+
+.panel>*:first-child {
   transform: translatey(-100%);
 }
-.panel.active > *:first-child{
+
+.panel.active>*:first-child {
   transform: translatey(0%);
 }
-.panel > *:last-child {
+
+.panel>*:last-child {
   transform: translateY(100%);
 }
-.panel.active > *:last-child{
+
+.panel.active>*:last-child {
   transform: translateY(0%);
 }
 
-.panel1{
-background-image: url(https://i.imgur.com/9FPw8pF.jpg);
+.panel1 {
+  background-image: url(https://i.imgur.com/9FPw8pF.jpg);
 }
 
-.panel2{
-background-image: url(https://i.imgur.com/19Fuqa3.jpg);
+.panel2 {
+  background-image: url(https://i.imgur.com/19Fuqa3.jpg);
 }
 
-.panel3{
-background-image: url(https://i.imgur.com/RuK8r6z.jpg);
+.panel3 {
+  background-image: url(https://i.imgur.com/RuK8r6z.jpg);
 }
 
-.panel4{
-background-image: url(https://i.imgur.com/IGnA6qG.jpg);
+.panel4 {
+  background-image: url(https://i.imgur.com/IGnA6qG.jpg);
 }
 
-.panel5{
-background-image: url(https://i.imgur.com/fbBlNtW.jpg);
+.panel5 {
+  background-image: url(https://i.imgur.com/fbBlNtW.jpg);
 }
