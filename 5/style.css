@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster');
+
 *, *:before,*:after{
   box-sizing: inherit;
   }
@@ -19,20 +21,20 @@
   align-items: center;
   justify-content: center;
 font-size: 30px;
+font-family: 'Abril Fatface', cursive;
 text-shadow: 1px 0px 2px orange;
 background-size: cover;
 background-position: center;
 flex:1;
 display: flex;
 flex-direction: column;
-transition: flex 0.5s;
-
+transition: all 1s;
 }
 
 .panel > * {
   margin: 0;
   width:100%;
-  transition: transform 0.5s;
+  transition: all 0.5s;
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
@@ -40,23 +42,30 @@ transition: flex 0.5s;
 
 }
 
-.panel > *:first-child {
-  transform: translateY(-100%);
-}
-.panel.active > *:first-child{
-  transform: translateY(0%);
+.open {
+  flex: 2.5;
+  }
+
+.panel >*:nth-child(2) {
+font-family: 'Lobster', 'cursive';
+   }
+
+.panel.active >*:nth-child(2) {
+  font-size: 50px;
 }
 
+.panel > *:first-child {
+  transform: translatey(-100%);
+}
+.panel.active > *:first-child{
+  transform: translatey(0%);
+}
 .panel > *:last-child {
   transform: translateY(100%);
 }
 .panel.active > *:last-child{
   transform: translateY(0%);
 }
-
-.open {
-  flex: 2.5;
-  }
 
 .panel1{
 background-image: url(https://i.imgur.com/9FPw8pF.jpg);
